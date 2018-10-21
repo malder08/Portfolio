@@ -1,0 +1,36 @@
+//Challenge 13
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //declare variables
+    int books, points;
+
+    //prompt and input of books
+    cout << "Please enter the number of books purchased this month: ";
+    cin >> books;
+
+    //determine points earned and display points
+    if (books <= 0) {
+        points = 0;
+        cout << "You are earned " << points << " points.";
+    }
+    else if (books == 1) {
+        points = 5;
+        cout << "You are earned " << points << " points.";
+    }
+    else if (books == 2) {
+        points = 15;
+        cout << "You are earned " << points << " points.";
+    }
+    else if (books == 3) {
+        points = 30;
+        cout << "You are earned " << points << " points.";
+    }
+    else {
+        points = 60;
+        cout << "You are earned " << points << " points.";
+    }
+
+}

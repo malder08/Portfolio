@@ -1,0 +1,38 @@
+//Challenge 7
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //declare variables
+    double seconds, mins, hours, days;
+
+    //prompt and input of seconds
+    cout << "Enter the Number of Seconds: ";
+    cin >> seconds;
+
+    //determine if seconds is greater than or equal to mins, hrs, days
+    //then calculate and output
+    if (seconds >= 86400) {
+        days = seconds / 86400;
+
+        cout << "There are " << days << " days in " << seconds << " seconds.";
+    }
+    else if (seconds >= 3600) {
+        hours = seconds / 3600;
+
+        cout << "There are " << hours << " hours in " << seconds << " seconds.";
+    }
+    else if (seconds >= 60) {
+        mins = seconds / 60;
+
+        cout << "There are " << mins << " minutes in " << seconds << " seconds.";
+    }
+    else if (seconds >= 0) {
+        cout << "You enter " << seconds << " seconds.";
+    }
+    else {
+        cout << "That is not a valid input.";
+    }
+
+}

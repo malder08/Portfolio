@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main() {
+    // The total seconds is 125.
+    int totalSeconds = 3842;
+
+    // Variables for the hours, minutes, and seconds
+    int minutes, seconds, hours;
+
+    //Get the number of hours
+    hours = totalSeconds / 3600;
+
+    // Get the number of minutes.
+    minutes = (totalSeconds % 3600) / 60;
+
+    // Get the remaining seconds.
+    seconds = totalSeconds - (hours * 3600) - (minutes * 60);
+
+    // Display the results.
+    cout << totalSeconds << " seconds is equivalent to:\n";
+    cout << "Hours: " << hours << endl;
+    cout << "Minutes: " << minutes << endl;
+    cout << "Seconds: " << seconds << endl;
+    return 0;
+}

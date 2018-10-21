@@ -1,0 +1,66 @@
+//Challenge 1
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //declare variables
+    int num1, num2;
+
+    //prompt and input
+    cout << "Enter Number 1: ";
+    cin >> num1;
+    cout << "Enter Number 2: ";
+    cin >> num2;
+
+    //determine which number is larger
+    if (num1 > num2) {
+        cout << num1 << " is greater than " << num2;
+    }
+    else if (num2 > num1) {
+        cout << num2 << " is greater than " << num1;
+    }
+    else {
+        cout << num1 << " is equal to " << num2;
+    }
+
+}
+
+
+
+//Challenge 2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //declare variables
+    int length1, width1, area1;
+    int length2, width2, area2;
+
+    //prompt and input
+    cout << "Enter the length and width of the first rectangle: ";
+    cin >> length1 >> width1;
+
+    cout << "Enter the length and width of the second rectangle: ";
+    cin >> length2 >> width2;
+
+    //calculate area of each rectangle
+    area1 = length1 * width1;
+    area2 = length2 * width2;
+
+    //determine which is larger
+    if (area1 > area2)
+    {
+        cout << "The area of the first rectangle is larger.";
+    }
+    else if (area2 > area1)
+    {
+        cout << "The area of the second rectangle is larger.";
+    }
+    else
+    {
+        cout << "The areas are the same.";
+    }
+
+}

@@ -1,0 +1,48 @@
+//Challenge 12
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //declare variables
+    double quantity, discount, totalPrice, price;
+    price = 99;
+
+    //prompt and input of number of packages
+    cout << "Enter the number of units: ";
+    cin >> quantity;
+
+    //determine the discount and calculate the total price.
+    if (quantity <= 0) {
+        cout << "Please enter a number greater than 0";
+    }
+    else if (quantity < 10) {
+        totalPrice = quantity * price;
+
+        cout << "The total price is $" << totalPrice;
+    }
+    else if (quantity < 20) {
+        discount = 0.80;
+        totalPrice = (quantity * price) * discount;
+
+        cout << "The total price is $" << totalPrice;
+    }
+    else if (quantity < 50) {
+        discount = 0.70;
+        totalPrice = (quantity * price) * discount;
+
+        cout << "The total price is $" << totalPrice;
+    }
+    else if (quantity < 100) {
+        discount = 0.60;
+        totalPrice = (quantity * price) * discount;
+
+        cout << "The total price is $" << totalPrice;
+    }
+    else {
+        discount = 0.50;
+        totalPrice = (quantity * price) * discount;
+
+        cout << "The total price is $" << totalPrice;
+    }
+}

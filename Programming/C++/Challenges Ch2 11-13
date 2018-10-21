@@ -1,0 +1,60 @@
+//Challenge 11
+//declare variables
+#include <iostream>
+using namespace std;
+
+int main() {
+ //declare variables
+ double gallons, townMileage, highwayMileage;
+ double townDistance, highwayDistance;
+ gallons = 20;
+ townMileage = 23.5;
+ highwayMileage = 28.9;
+
+ //Calculate distance
+ townDistance = gallons * townMileage;
+ highwayDistance = gallons * highwayMileage;
+
+ //Output Calculations
+ cout << "The car can travel " << townDistance << " miles in town with one tank of gas.\n";
+ cout << "The car can travel " << highwayDistance << " miles on a highway with one tank of gas.\n";
+}
+
+
+
+//Challenge 12
+#include <iostream>
+using namespace std;
+
+int main() {
+    //declare variables
+    int squarefeet, acres, acreToSF;
+    squarefeet = 391876;
+    acreToSF = 43650;
+
+    //calculate acres
+    acres = squarefeet / acreToSF;
+
+    //output acres
+    cout << squarefeet << " squarefeet is equivalent to " << acres << " acres.";
+}
+
+
+
+//Challenge 13
+#include <iostream>
+using namespace std;
+
+int main() {
+    //declare variables
+    double profitPercent, profit, sellingCost, totalCost;
+    sellingCost = 14.95;
+    profitPercent = 0.35;
+
+    //calculate the profit they make and the total cost after adding the profit
+    profit = sellingCost * profitPercent;
+    totalCost = profit + sellingCost;
+
+    //output totalCost
+    cout << "The selling cost of the circuit board is $" << totalCost;
+}

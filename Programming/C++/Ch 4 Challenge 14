@@ -1,0 +1,67 @@
+//Challenge 14
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //declare variables
+    double monthlyFee;
+    double balance, balanceCharge;
+    double checks, checkCharge, totalCheckCharge;
+    double totalCharge;
+
+    monthlyFee = 10;
+
+    //prompt and input of begBalance and checks
+    cout << "Enter the Beginning Balance: ";
+    cin >> balance;
+
+    cout << "Enter the Number of Checks Written: ";
+    cin >> checks;
+
+    //output of monthlyFee
+    cout << "Bank's Service Fees: \n";
+    cout << "Monthly Charge: $" << monthlyFee;
+
+    //determine charge for checks
+    if (checks < 0) {
+        cout << "\nThat is not a valid number of checks.";
+    }
+    else if (checks < 20) {
+        checkCharge = 0.10;
+        totalCheckCharge = checkCharge * checks;
+        cout << "\nCheck Charge: $" << totalCheckCharge;
+    }
+    else if (checks < 40) {
+        checkCharge = 0.08;
+        totalCheckCharge = checkCharge * checks;
+        cout << "\nCheck Charge: $" << totalCheckCharge;
+    }
+    else if (checks < 60) {
+        checkCharge = 0.06;
+        totalCheckCharge = checkCharge * checks;
+        cout << "\nCheck Charge: $" << totalCheckCharge;
+    }
+    else {
+        checkCharge = 0.04;
+        totalCheckCharge = checkCharge * checks;
+        cout << "\nCheck Charge: $" << totalCheckCharge;
+    }
+
+    //determine if balance is adequate
+    if (balance < 0) {
+        cout << "\nURGENT!! ACCOUNT OVERDRAWN!!";
+    }
+    else if (balance < 400) {
+        balanceCharge = 15;
+        cout << "\nBalance Charge: $" << balanceCharge;
+    }
+    else {
+        balanceCharge = 0;
+        cout << "\nBalance is Sufficient.";
+    }
+
+    //calculate total charge
+    totalCharge = monthlyFee + balanceCharge + totalCheckCharge;
+    cout << "\nThe Total Charge is: $" << totalCharge;
+}

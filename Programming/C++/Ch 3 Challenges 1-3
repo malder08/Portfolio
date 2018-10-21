@@ -1,0 +1,80 @@
+//Challenge 1
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //declare variables
+    double totalGallons, miles, mileage;
+
+    //prompt and input
+    cout << "Enter the number of gallons your car can hold: ";
+    cin >> totalGallons;
+    cout << "\nEnter the total number of miles your car can drive on a full tank: ";
+    cin >> miles;
+
+    //calculate mileage
+    mileage = miles / totalGallons;
+
+    //output info
+    cout << "Your car can drive " << mileage << " miles per gallon.";
+
+}
+
+
+
+//Challenge 2
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //declare variables
+    double costOfA, costOfB, costOfC;
+    double numOfA, numOfB, numOfC;
+    double totalIncome;
+
+    //define variables
+    costOfA = 15;
+    costOfB = 13;
+    costOfC = 9;
+
+    //prompt and input
+    cout << "Enter number of Class A tickets sold: ";
+    cin >> numOfA;
+    cout << "\nEnter number of Class B tickets sold: ";
+    cin >> numOfB;
+    cout << "\nEnter number of Class C tickets sold: ";
+    cin >> numOfC;
+
+    //calculate totalIncome
+    totalIncome = (numOfA * costOfA) + (numOfB * costOfB) + (numOfC * costOfC);
+
+    //output totalIncome
+    cout << "\nThe total income generated is $" << totalIncome;
+}
+
+
+
+//Challenge 3
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //declare variables
+    double score1, score2, score3, score4, score5;
+    double sum, avg;
+
+    //prompt and input of test scores
+    cout << "Enter each test score seperated by a space: ";
+    cin >> score1 >> score2 >> score3 >> score4 >> score5;
+
+    //calculate sum and avg
+    sum = score1 + score2 + score3 + score4 + score5;
+    avg = sum / 5;
+
+    //output avg
+    cout << "\nThe Average Test Score is: " << avg;
+
+}

@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // variables
+    int input, distance, time0;
+
+    // prompt and input for 3 diff options
+    cout << "Choose one of the following\n";
+    cout << "Air(1)\nWater(2)\nSteel(3)\n";
+    cin >> input;
+
+    //prompt and input of distance
+    cout << "Enter the distance the sound wave will travel: ";
+    cin >> distance;
+
+    //determine which option they chose
+    if (distance > 0) {
+        if (input <= 0) {
+            cout << "That is not an option.";
+        }
+        else if (input > 3) {
+            cout << "That is not an option.";
+        }
+        else {
+            if (input == 1) {
+                time0 = distance / 1100;
+                cout << "It will take " << time0 << " seconds " <<
+                        "to travel " << distance << " feet";
+            }
+            else if (input == 2) {
+                time0 = distance / 4900;
+                cout << "It will take " << time0 << " seconds " <<
+                        "to travel " << distance << " feet";
+            }
+            else {
+                time0 = distance / 16400;
+                cout << "It will take " << time0 << " seconds " <<
+                        "to travel " << distance << " feet";
+            }
+        }
+    }
+    else {
+        cout << "That is not a valid distance.";
+    }
+
+}

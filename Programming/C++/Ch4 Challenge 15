@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //declare variables
+    double weight, distance, costPer500, totalCost;
+
+    //prompt and input of weight and distance
+    cout << "Enter the weight of the object: ";
+    cin >> weight;
+
+    cout << "Enter the distance the object will travel: ";
+    cin >> distance;
+
+
+    //determine the costPer500 and totalCost with if statements
+    if (weight > 0 && weight <=20) {
+        if (distance >= 10 && distance <= 3000) {
+            if (weight <= 2) {
+                costPer500 = 1.10;
+                totalCost = (distance / 500) * costPer500;
+
+                cout << "The total cost of shipping is $" << totalCost;
+            }
+            else if (weight <= 6) {
+                costPer500 = 2.20;
+                totalCost = (distance / 500) * costPer500;
+
+                cout << "The total cost of shipping is $" << totalCost;
+            }
+            else if (weight <= 10) {
+                costPer500 = 3.70;
+                totalCost = (distance / 500) * costPer500;
+
+                cout << "The total cost of shipping is $" << totalCost;
+            }
+            else if (weight <= 20) {
+                costPer500 = 4.80;
+                totalCost = (distance / 500) * costPer500;
+
+                cout << "The total cost of shipping is $" << totalCost;
+            }
+            else {
+                cout << "That is not a valid weight.";
+                cout << "\nCannot preform calculation for total";
+            }
+        }
+        else {
+            cout << "Invalid distance or weight. Cannot calculate cost.";
+        }
+    }
+    else {
+        cout << "Invalid distance or weight. Cannot calculate cost.";
+    }
+}

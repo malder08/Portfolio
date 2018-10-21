@@ -1,0 +1,16 @@
+body {
+  font-family: Calibri;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+li {
+  margin: 10px;
+}
+
+.delbtn {
+  margin-left: 5px;
+  radius: 5px;
+}

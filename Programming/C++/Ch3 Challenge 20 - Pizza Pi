@@ -1,0 +1,26 @@
+#include <iostream>
+#include <iomanip> // For setprecision
+#include <cmath> // For the pow functions
+using namespace std;
+
+int main()
+{
+  //declare and initiate variables
+  double diameter, radius, area, slicearea, slices;
+  double pi;
+  slicearea = 14.125;
+  pi = 3.14;
+
+  //prompt and input of diameter of pizza
+  cout << "Enter the diameter of the pizza: ";
+  cin >> diameter;
+
+  //calculate radius, area, and number of slices
+  radius = diameter / 2;
+  area = pi * pow(radius, 2.0);
+  slices = area / slicearea;
+
+  //output calculation
+  cout << "\nThe number of slices that a pizza with a diameter of " << diameter << " inches has is "
+  << setprecision(1) << fixed << slices;
+}

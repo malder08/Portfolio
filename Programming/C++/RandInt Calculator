@@ -1,0 +1,53 @@
+#include <cstdlib>
+#include <iostream>
+#include <ctime>
+
+using namespace std;
+
+int main()
+{
+    //declare variables
+    int num1, num2;
+    int sum, diff, product;
+    double quotient;
+    const int min_value = 1;
+    const int max_value = 100;
+
+    //set the seed
+    unsigned seed = time(0);
+    srand (seed);
+
+    //adding
+    num1 = (rand() % (max_value - min_value + 1)) + min_value;
+    num2 = (rand() % (max_value - min_value + 1)) + min_value;
+
+    sum = num1 + num2;
+
+    cout << num1 << " + " << num2 << " = " << sum << endl;
+
+    //subtracting
+    num1 = (rand() % (max_value - min_value + 1)) + min_value;
+    num2 = (rand() % (max_value - min_value + 1)) + min_value;
+
+    diff = num1 - num2;
+
+    cout << num1 << " - " << num2 << " = " << diff << endl;
+
+    //multiplying
+    num1 = (rand() % (max_value - min_value + 1)) + min_value;
+    num2 = (rand() % (max_value - min_value + 1)) + min_value;
+
+    product = num1 * num2;
+
+    cout << num1 << " * " << num2 << " = " << product << endl;
+
+    //dividing
+    num1 = (rand() % (max_value - min_value + 1)) + min_value;
+    num2 = (rand() % (max_value - min_value + 1)) + min_value;
+
+    quotient = num1 / num2;
+
+    cout << num1 << " / " << num2 << " = " << quotient << endl;
+
+
+}

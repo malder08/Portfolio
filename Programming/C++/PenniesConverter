@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+int main() {
+  //declare dollars, quarters, dimes, nickels, pennies, and remainder
+  int dollars, quarters, dimes, nickels, pennies, rem;
+
+  //set number of pennies
+  pennies = 1024;
+
+  //determine dollars
+  dollars = pennies / 100;
+  rem = pennies % 100;
+
+  //determine quarters
+  quarters = rem / 25;
+  rem = rem % 25;
+
+  //determine dimes
+  dimes = rem / 10;
+  rem = rem % 10;
+
+  //determine nickels
+  nickels = rem / 5;
+  rem = rem % 5;
+
+  //determine pennies
+  pennies = rem;
+
+  //output results
+  cout << pennies << " pennies is the same as -";
+  cout << "Dollars: " << dollars << "\n";
+  cout << "Quarters: " << quarters << "\n";
+  cout << "Dimes: " << dimes << "\n";
+  cout << "Nickels: " << nickels << "\n";
+  cout << "Pennies: " << pennies << "\n";
+}

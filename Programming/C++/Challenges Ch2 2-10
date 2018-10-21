@@ -1,0 +1,218 @@
+//Challenge 2
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+int main() {
+  //declare variables and set values
+  double percentOfSales, sales, generatedSales;
+  percentOfSales = 0.58;
+  sales = 8.6;
+
+  //calculate Generated sales
+  generatedSales = percentOfSales * sales;
+
+  //output generated sales
+  cout << "The East Coast division will generate $" << generatedSales << " million.\n";
+}
+
+
+
+//Challenge 3
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+int main() {
+    //declare and set variables
+    double statestax, countytax, purchasetotal, totaltax;
+    statestax = 0.04;
+    countytax = 0.02;
+    purchasetotal = 95;
+
+    //calculate total tax
+    totaltax = (purchasetotal * statestax) + (purchasetotal * countytax);
+
+    cout << "The total sales tax on a purchase of $" << purchasetotal << " is $" << totaltax << ".";
+}
+
+
+
+//Challenge 4
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+int main() {
+    //declare variables
+    double mealcost, tax, tip;
+    double costWithTax, costOfTax, costOfTip;
+    double totalCost;
+
+    //set variables
+    mealcost = 88.67;
+    tax = 0.0675;
+    tip = 0.2;
+
+    //calculate cost of tax, cost wth tax, and cost of tip
+    costOfTax = mealcost * tax;
+    costWithTax = mealcost + costOfTax;
+    costOfTip = costWithTax * tip;
+
+    //calculate total
+    totalCost = mealcost + costOfTax + costOfTip;
+
+    //output calculated value
+    cout << "Meal Cost: $" << mealcost << "\n";
+    cout << "Tax: $" << costOfTax << "\n";
+    cout << "Tip: $" << costOfTip << "\n";
+    cout << "Total Cost: $" << totalCost;
+}
+
+
+
+//Challenge 5
+#include <iostream>
+using namespace std;
+
+int main() {
+  int var1, var2, var3, var4, var5, sum;
+  double avg;
+  var1 = 28;
+  var2 = 32;
+  var3 = 37;
+  var4 = 24;
+  var5 = 33;
+
+  //calc sum
+  sum = var1 + var2 + var3 + var4 + var5;
+
+  //calc avg
+  avg = sum / 5;
+
+  //output vars and avg
+  cout << "Var1 = " << var1 << "\n";
+  cout << "Var2 = " << var2 << "\n";
+  cout << "Var3 = " << var3 << "\n";
+  cout << "Var4 = " << var4 << "\n";
+  cout << "Var5 = " << var5 << "\n";
+  cout << "The Average is " << avg;
+}
+
+
+
+//Challenge 6
+#include <iostream>
+using namespace std;
+
+int main() {
+    //declare variables
+    int payAmount, payPeriods, annualPay;
+    payAmount = 2200;
+    payPeriods = 26;
+
+    //calc annual pay
+    annualPay = payAmount * payPeriods;
+
+    //output annual pay
+    cout << "The Annual Pay is $" << annualPay;
+}
+
+//Challenge 7
+#include <iostream>
+using namespace std;
+
+int main() {
+    //declare variables
+    double changeInLevel, years5, years7, years10;
+    changeInLevel = 1.5;
+
+    //calculate each period
+    years5 = changeInLevel * 5;
+    years7 = changeInLevel * 7;
+    years10 = changeInLevel * 10;
+
+    //output info
+    cout << "The ocean level will be " << years5 << "mm higher in 5 years.\n";
+    cout << "The ocean level will be " << years7 << "mm higher in 7 years.\n";
+    cout << "The ocean level will be " << years10 << "mm higher in 10 years.\n";
+}
+
+
+
+//Challenge 8
+#include <iostream>
+using namespace std;
+
+int main() {
+    //declare variables
+    double price1, price2, price3, price4, price5;
+    double subtotal, taxPercent, salesTax, total;
+
+    //define variables
+    price1 = 15.95;
+    price2 = 24.95;
+    price3 = 6.95;
+    price4 = 12.95;
+    price5 = 3.95;
+    taxPercent = 0.07;
+
+    //calc subtotal, tax, and total
+    subtotal = price1 + price2 + price3 + price4 + price5;
+    salesTax = subtotal * taxPercent;
+    total = salesTax + subtotal;
+
+    //output info
+    cout << "Cost of Item 1: $" << price1 << "\n";
+    cout << "Cost of Item 2: $" << price2 << "\n";
+    cout << "Cost of Item 3: $" << price3 << "\n";
+    cout << "Cost of Item 4: $" << price4 << "\n";
+    cout << "Cost of Item 5: $" << price5 << "\n";
+    cout << "Subtotal: $" << subtotal << "\n";
+    cout << "Sales Tax: $" << salesTax << "\n";
+    cout << "Total: $" << total;
+}
+
+
+
+//Challenge 9
+#include <iostream>
+using namespace std;
+
+int main() {
+    //declare variables
+    int charbytes, intbytes, floatbytes, doublebytes;
+
+    //determine number of bytes
+    charbytes = sizeof(char);
+    intbytes = sizeof(int);
+    floatbytes = sizeof(float);
+    doublebytes = sizeof(double);
+
+    //output number of bytes in each
+    cout << "The number of bytes the char variable uses is " << charbytes << ".\n";
+    cout << "The number of bytes the int variable uses is " << intbytes << ".\n";
+    cout << "The number of bytes the float variable uses is " << floatbytes << ".\n";
+    cout << "The number of bytes the double variable uses is " << doublebytes << ".\n";
+}
+
+
+
+//Challenge 10
+#include <iostream>
+using namespace std;
+
+int main() {
+    //declare variables
+    int gallons, miles, milesPerGallon;
+
+    //define variables
+    gallons = 15;
+    miles = 375;
+
+    //calc miles per gallon
+    milesPerGallon = miles / gallons;
+
+    //ouput info
+    cout << "The car gets " << milesPerGallon << " miles per gallon.";
+}

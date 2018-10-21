@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int input, sum, num;
+
+    num = 0;
+
+    cout << "Enter a positive value: ";
+    cin >> input;
+
+    while (input < 0) {
+        cout << "That is not a positive value.\n";
+        cout << "Enter a positive value: ";
+        cin >> input;
+    }
+
+    while (num <= input) {
+        sum = sum + num++;
+    }
+
+    cout << sum;
+} 
