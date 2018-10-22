@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int year;
+    double rise;
+
+    rise = 1.5;
+    year = 1;
+
+    cout << "Year" << "   " << "Rise in (mm)\n";
+
+    while (year <= 25) {
+        cout << year << "      " << rise << endl;
+        year++;
+        rise += 1.5;
+    }
+}
